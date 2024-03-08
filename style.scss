@@ -1,5 +1,7 @@
+// Importing partials files
+@use './scss/partials/globals';
 
 
-#app {
-    color: red;
-}
+// Importing the components
+@use './scss/components/Home/home';
+@use './scss/components/Hero/hero';

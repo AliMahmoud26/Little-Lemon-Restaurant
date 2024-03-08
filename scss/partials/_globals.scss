@@ -1,0 +1,56 @@
+// Importing other files
+@use './variables' as *;
+
+// Importing font family
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: {
+        size: 16px;
+        family: "Lobster", sans-serif;
+    }
+}
+
+.container {
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    color: $light;
+    padding: 1rem;
+    border: .125rem solid $lightGreen;
+    border-radius: .25rem;
+    cursor: pointer;
+    transition: $transition;
+    font: {
+        size: 1.125rem;
+        family: "Lobster", sans-serif;
+    }
+
+    &:hover {
+        color: $lightGreen;
+        background-color: transparent;
+    }
+}
+
+
