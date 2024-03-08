@@ -85,7 +85,7 @@ a {
 }
 
 .hero {
-  background-image: url(../../../public/assets/hero6.jpg);
+  background-image: url(../public/assets/hero6.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
