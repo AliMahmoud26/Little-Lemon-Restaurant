@@ -7,6 +7,9 @@
     <title>Little Lemon App</title>
     <link rel="stylesheet" href="dist/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Swiper Js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
     <!-- Navbar component -->
@@ -19,9 +22,9 @@
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#menu">Staff</a></li>
           <li><a href="#menu">Menu</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#staff">Staff</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
       <div class="form">
@@ -186,7 +189,7 @@
             <div class="dish">
               <img src="public/assets/cookies.jpeg" alt="dessert">
               <div class="text">
-                <h3>Brownies Cookies</h3>
+                <h3>Cookies</h3>
                 <div class="order">
                   <span class="price">$4.00</span>
                   <a href="#">Add to cart</a>
@@ -217,13 +220,130 @@
         </div>
       </section>
   
-  
       <!-- Staff component -->
-      <section class="staff" id="staff">
+      <section class="staff-heading">
+        <div class="container">
+          <div class="menu-header">
+            <h4 class="special-heading">Our Amazing Staff</h4>
+          </div>
+        </div>
+      </section>
+
+      <section class="swiper staff" id="staff">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper container">
+          <!-- Slides -->
+          <div class="swiper-slide chef-card">
+            <img src="public/assets/chef.png" alt="chef image">
+            <div class="text">
+              <h2>Somone Name</h2>
+              <h4>Chef</h4>
+              <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, sit excepturi mollitia earum nemo, quod unde ea aliquam ex perspiciatis sed non repellendus praesentium. Aliquam dolor fugit dignissimos eveniet placeat.</span>
+              <div class="experience">
+                <div class="experience">
+                  <h4>4 Years of experience</h4>
+                  <span class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                </div>
+              </div>
+              <a class="btn" href="#">About me</a>
+            </div>
+          </div>
+          <div class="swiper-slide chef-card">
+            <img src="public/assets/chef2.jpg" alt="chef image">
+            <div class="text">
+              <h2>Somone Name</h2>
+              <h4>Chef</h4>
+              <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore dolorum necessitatibus consequatur nobis sit nulla tempora, maiores deleniti expedita accusantium veniam porro, quae aliquid, numquam magnam eos? Dolorum, aut adipisci!</span>
+              <div class="experience" style="margin-top: .875rem;">
+                <h4>2 Years of experience</h4>
+                <span class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </span>
+              </div>
+            </div>
+            <a class="btn" href="#" style="margin-top: 0;">About me</a>
+          </div>
+          <div class="swiper-slide chef-card">
+            <img src="public/assets/baker1.jpg" alt="baker image">
+            <div class="text">
+              <h2>Somone Name</h2>
+              <h4>Baker</h4>
+              <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia debitis temporibus ad perspiciatis commodi corrupti dicta doloremque nam veritatis saepe dolore alias obcaecati at, dolorum ipsum nulla deserunt laborum a.</span>
+              <div class="experience" style="margin-top: .875rem;">
+                <h4>6 Years of experience</h4>
+                <span class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+            </div>
+            <a class="btn" href="#" style="margin-top: 0;">About me</a>
+          </div>
+          <div class="swiper-slide chef-card">
+            <img src="public/assets/baker2.jpg" alt="baker image">
+            <div class="text">
+              <h2>Somone Name</h2>
+              <h4>Baker</h4>
+              <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia debitis temporibus ad perspiciatis commodi corrupti dicta doloremque nam veritatis saepe dolore alias obcaecati at, dolorum ipsum nulla deserunt laborum a.</span>
+              <div class="experience" style="margin-top: .875rem;">
+                <h4>3 Years of experience</h4>
+                <span class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </span>
+              </div>
+            </div>
+            <a class="btn" href="#" style="margin-top: 0;">About me</a>
+          </div>
+          <div class="swiper-slide chef-card">
+            <img src="public/assets/accountant.jpg" alt="accountant image">
+            <div class="text">
+              <h2>Somone Name</h2>
+              <h4>Accountant</h4>
+              <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia debitis temporibus ad perspiciatis commodi corrupti dicta doloremque nam veritatis saepe dolore alias obcaecati at, dolorum ipsum nulla deserunt laborum a.</span>
+              <div class="experience" style="margin-top: .875rem;">
+                <h4>3 Years of experience</h4>
+                <span class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </span>
+              </div>
+            </div>
+            <a class="btn" href="#" style="margin-top: 0;">About me</a>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <!-- <div class="swiper-pagination"></div> -->
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev prev"></div>
+        <div class="swiper-button-next next"></div>
+      
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar"></div> -->
       </section>
   
       <!-- Video component -->
-      <section class="menu" id="menu">
+      <section class="video" id="video">
       </section>
   
       <!-- Newsletter component -->
@@ -232,9 +352,55 @@
   
       <!-- Contact component -->
       <footer class="contact" id="contact">
+        <div class="container">
+          <div class="top-container">
+            <div class="left-footer">
+              <img src="public/assets/Asset 16@4x.png" alt="">
+              <div class="socials">
+                <i class="fa-brands fa-facebook facebook"></i>
+                <i class="fa-brands fa-x-twitter twitter"></i>
+                <i class="fa-brands fa-instagram instagram"></i>
+              </div>
+              <p class="disc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque sint atque iusto.</p>
+            </div>
+            <div class="center-footer">
+              <ul>
+                <li><i class="fa-solid fa-angles-right"></i><a href="#home">Home</a></li>
+                <li><i class="fa-solid fa-angles-right"></i><a href="#about">About</a></li>
+                <li><i class="fa-solid fa-angles-right"></i><a href="#menu">Menu</a></li>
+                <li><i class="fa-solid fa-angles-right"></i><a href="#staff">Staff</a></li>
+              </ul>
+            </div>
+            <div class="right-footer">
+              <span>
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Country, City, Block Number...</p>
+              </span>
+              <span>
+                <i class="fa-regular fa-clock"></i>
+                <p>Business Hours: From 10:00 To 22:00</p>
+              </span>
+              <span class="phone">
+                <i class="fa-solid fa-phone"></i>
+                <div class="numbers">
+                  <p>+0 123 456 789</p>
+                  <p>+0 123 456 789</p>
+                </div>
+              </span>
+            </div>
+          </div>
+          <hr />
+          <div class="bottom-container">
+            All Rights &copy; Reserved
+          </div>
+        </div>
       </footer>
     </main>
 
+    <script type="module">
+      import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+      const swiper = new Swiper();
+    </script>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
