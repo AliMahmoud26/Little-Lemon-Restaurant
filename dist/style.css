@@ -1,14 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Quicksand:wght@300..700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 16px;
-  font-family: "Lobster", sans-serif;
+  font-family: "Crimson Text", serif;
 }
 
 .container {
@@ -29,15 +34,51 @@ a {
   outline: none;
   color: #fff;
   padding: 1rem;
-  border: 0.125rem solid rgba(59, 237, 119, 0.556);
   border-radius: 0.25rem;
   cursor: pointer;
   transition: all 0.4s ease-in-out;
   font-size: 1.125rem;
-  font-family: "Lobster", sans-serif;
+  font-family: "Crimson Text", serif;
 }
 .btn:hover {
   color: rgba(59, 237, 119, 0.556);
+  background-color: transparent;
+}
+
+.special-heading {
+  position: relative;
+  color: rgb(59, 237, 151);
+  font-size: 2rem;
+  font-family: Lobster, "sans-serif";
+  font-weight: normal;
+}
+.special-heading::before {
+  content: "";
+  position: absolute;
+  left: -38px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 0.18rem;
+  width: 2rem;
+  background-color: rgb(59, 237, 151);
+}
+
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-header a {
+  color: whitesmoke;
+  background-color: rgb(59, 237, 151);
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.4rem;
+  border: 2px solid rgb(59, 237, 151);
+  transition: all 0.4s ease-in-out;
+  font-size: 1.25rem;
+}
+.menu-header a:hover {
+  color: #222;
   background-color: transparent;
 }
 
@@ -52,7 +93,7 @@ a {
   z-index: 2;
 }
 .header-menu .logo {
-  width: 2.75rem;
+  width: 2.5rem;
 }
 .header-menu .logo img {
   width: 100%;
@@ -97,7 +138,7 @@ a {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 .hero .text {
   position: absolute;
@@ -106,24 +147,155 @@ a {
   transform: translate(-50%, -50%);
   width: 100%;
   padding: 3.125rem;
-  color: #fff;
-  background-color: rgba(15, 116, 143, 0.7);
+  color: whitesmoke;
 }
 .hero .text .text-content {
   text-align: center;
   line-height: 1.5;
 }
+.hero .text .text-content h4 {
+  font-size: 1.125rem;
+  text-align: left;
+}
 .hero .text .text-content h2 {
   font-size: 4rem;
+}
+.hero .text .text-content h2 .first-word {
+  font-size: 4rem;
+  color: rgb(59, 237, 151);
 }
 .hero .text .text-content p, .hero .text .text-content span {
   font-size: 1.5rem;
 }
+.hero .text .text-content p .restaurant-name {
+  color: rgb(59, 237, 151);
+}
+.hero .text .text-content span .last-word {
+  color: rgb(59, 237, 151);
+}
+.hero .text .text-content .restaurant-name,
+.hero .text .text-content .last-word {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
 .hero .text .text-content .dishes-btn {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   background-color: rgba(59, 237, 119, 0.556);
+  border: 0.125rem solid rgba(59, 237, 119, 0.556);
+}
+.hero .text .text-content .dishes-btn a {
+  color: whitesmoke;
 }
 .hero .text .text-content .dishes-btn:hover {
   color: #fff;
   background-color: transparent;
+}
+
+.about {
+  padding: 14rem 20rem 0;
+}
+.about .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10rem;
+}
+.about .container .left-about {
+  position: relative;
+}
+.about .container .left-about::before, .about .container .left-about::after {
+  content: "";
+  position: absolute;
+  height: 140px;
+  width: 140px;
+  z-index: -1;
+}
+.about .container .left-about::before {
+  top: -50px;
+  left: -50px;
+  border-top: 1rem solid rgb(59, 237, 151);
+  border-left: 1rem solid rgb(59, 237, 151);
+}
+.about .container .left-about::after {
+  bottom: -40px;
+  right: -50px;
+  height: 140px;
+  width: 140px;
+  border-bottom: 1rem solid rgb(59, 237, 151);
+  border-right: 1rem solid rgb(59, 237, 151);
+}
+.about .container .left-about img {
+  width: 12rem;
+  z-index: 99;
+}
+.about .container .right-about p {
+  margin-top: 0.625rem;
+  line-height: 1.6;
+  color: #777;
+  font-size: 1.125rem;
+}
+
+.menu .container .food-holder {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  padding-top: 4rem;
+}
+.menu .container .food-holder .dish {
+  transition: all 0.4s ease-in-out;
+  padding: 2rem;
+}
+.menu .container .food-holder .dish img {
+  width: 14rem;
+  border-radius: 0.5rem;
+  filter: brightness(70%);
+  transition: all 0.4s ease-in-out;
+}
+.menu .container .food-holder .dish img:hover {
+  transform: scale(1.1);
+  filter: brightness(100%);
+}
+.menu .container .food-holder .dish .text {
+  padding-top: 0.5rem;
+}
+.menu .container .food-holder .dish .text h3 {
+  padding-bottom: 1.5rem;
+  color: #222;
+  font-weight: normal;
+}
+.menu .container .food-holder .dish .text .order {
+  display: flex;
+  align-items: center;
+  gap: 6.5rem;
+}
+.menu .container .food-holder .dish .text .order .price {
+  color: #222;
+  font-weight: 600;
+}
+.menu .container .food-holder .dish .text .order a {
+  color: whitesmoke;
+  background-color: rgb(59, 237, 151);
+  padding: 0.4rem;
+  border-radius: 0.4rem;
+  border: 1px solid rgb(59, 237, 151);
+  transition: all 0.4s ease-in-out;
+}
+.menu .container .food-holder .dish .text .order a:hover {
+  color: #222;
+  background-color: transparent;
+}
+
+.food-dishes {
+  padding: 4rem 7rem;
+  margin: 12rem 0;
+}
+
+.drinks {
+  padding: 4rem 7rem;
+  margin: -12rem 0;
+}
+
+.deserts {
+  padding: 4rem 7rem;
+  margin: 12rem 0;
 }/*# sourceMappingURL=style.css.map */
